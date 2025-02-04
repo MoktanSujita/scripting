@@ -1,0 +1,12 @@
+th, td{
+    padding: 20 px;
+    border: 2px solid rgb(176, 161, 161);
+}
+td:nth-child(even)
+{
+    background-color: aqua;
+}
+td:nth-child(odd)
+{
+    background-color: beige;
+}

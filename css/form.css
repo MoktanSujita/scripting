@@ -1,0 +1,19 @@
+#did 
+{
+ text-align: center;
+ background-color:blueviolet;
+ color: white;
+}
+label
+{
+   width: 100px;
+   text-align: right;
+}
+form 
+{
+    gap: 10px;
+}
+.btn +.btn
+{
+    margin-left: 400px;
+}

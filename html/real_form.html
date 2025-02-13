@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="E:\scripting\css\form.css">
+</head>
+<body>
+    <div style="width:500px; height: 800px; background-color:floralwhite;">
+    <div id="did">
+      <h1>Client Details</h1>
+      <p>Enter the details of all incoming clients.</p>
+    </div>
+    <table>
+     <form action="E:\xampp\htdocs\Server\form.php" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Personal Information</legend>
+           <label for="name">Client Name</label>
+           <input name="name" id="name" type="text"><br/><br/>
+           <label for="date">Date of birth</label>
+           <input name="date" id="date" type="date" max="2025-02-28"><br/><br/>
+           <label for="Address">Address</label>
+           <select name="Address" id="Address">
+            <optgroup level="Bagmati" style="color: black;">
+              <option value=""></option>
+              <option value="Bhaktapur">Bhaktapur</option>
+              <option value="Lalitpur">Lalitpur</option>
+              <option value="Kathmandu">Kathmandu</option>
+            </optgroup>
+            <optgroup level="Lumbini">
+              <option value="Lumbini">Lumbini</option>
+            </optgroup>
+           </select>
+           <br/><br/>
+           <label for="skills">Your skills</label>
+           <input name="HTML" id="skills[]" type="checkbox" value="HTML">
+           <label for="skills[]">HTML</label>
+           <input name="CSS" id="skills[]" type="checkbox" value="CSS">
+           <label for="skills[]">CSS</label>
+           <input type="checkbox" name="JS" id="skills[]" value="JS">
+           <label for="skills[]">JS</label>
+          </fieldset>
+          <fieldset>
+            <legend>Verification</legend>
+            <label>Insert your file</label>
+            <input id="file" name="file" type="file"><br/><br/>
+            <label for="company">Company</label>
+            <input name="company" id="company" type="text"><br/><br/>
+            <label for="department">Department</label>
+            <select name="department" id="department">
+              <option value=""></option>
+              <option value="A">Department A</option>
+              <option value="B">Department B</option>
+              <option value="C">Department C</option>
+            </select><br/><br/>
+          </fieldset>
+          <fieldset>
+            <legend>Contact</legend>
+            <label for="contact">Preferred contact method</label>
+            <input name="contact" id="email" type="radio" value="Email">
+            <label for="email">Email</label>
+            <input name="contact" id="phone" type="radio" value="Phone">
+            <label for="phone">Phone</label><br/><br/>
+            <label for="em">Email</label>
+            <input id="em" name="email" type="email"><br/><br/>
+            <label for="number">Number</label>
+            <input type="text" id="number" maxlength="10" pattern="\d{10}" required/>
+          </fieldset><br/>
+          <button class="btn" type="submit">Submit</button>
+          <button class="btn" type="reset">Reset</button>
+        </form>
+    </table>
+    </div>
+</body>
+</html>

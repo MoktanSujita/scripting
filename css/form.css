@@ -1,7 +1,7 @@
-#did 
+.did 
 {
  text-align: center;
- background-color:blueviolet;
+ background-color:rgb(148, 6, 6);
  color: white;
 }
 label
@@ -13,7 +13,16 @@ form
 {
     gap: 10px;
 }
-.btn +.btn
+.btn +.btn1
 {
     margin-left: 400px;
+}
+body
+{
+    background-color: black;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  margin: 0; /
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        div
+        {
+            background:white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5%;
+            height: 100px;
+            width: 300px;
+            
+        }
+        .login:hover
+        {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form>
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Enter your username"><br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter your password"><br><br>
+        <input type="submit" value="Log in" class="login">
+    </form>
+    </div>
+</body>
+</html>

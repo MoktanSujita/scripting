@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div
+        {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            background-color:aliceblue ;
+            height: 200px;
+            width: 400px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+     <form onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password"><br><br>
+
+        <input type="submit" value="submit">
+     </form>
+    </div>
+
+    <script>
+        function validateForm()
+        {
+            let user=document.getElementById("username");
+            let pass=document.getElementById("password").value.trim();
+
+            if(user==="" || pass==="")
+        {
+            alert("Please fill in the fields");
+            return false;
+        }
+
+        else if(pass.length<6)
+        {
+            alert("Password should be more than 6 characters long");
+            return false;
+        }
+
+        else
+        return true;
+        }
+    </script>
+</body>
+</html>

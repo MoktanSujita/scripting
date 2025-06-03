@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item>
+        <item_name>Momo</item_name>
+        <price>100</price>
+    </item>
+    <item>
+        <item_name>Ramen</item_name>
+        <price>180</price>
+    </item>
+    <item>
+        <item_name>Hot dog</item_name>
+        <price>120</price>
+    </item>
+</menu>
